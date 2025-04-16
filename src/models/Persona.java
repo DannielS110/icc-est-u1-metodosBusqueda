@@ -25,4 +25,8 @@ public class Persona {
     public void setName(String name) {
         this.name = name;
     }
+    
+    public String toString(){
+        return "persona [code="+code+", name ="+name+"]";
+    }
 }

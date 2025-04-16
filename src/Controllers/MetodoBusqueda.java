@@ -11,6 +11,7 @@ public class MetodoBusqueda {
     public MetodoBusqueda(Persona[] persons) {
         showConsole = new ShowConsole();
         this.people = persons;
+        showPerson();
     }
 
     public int busquedaLineal(int[] arreglo, int valorBuscar) {
@@ -64,15 +65,7 @@ return -1;
     }
 
     public void showPersonByName() {
-        String nameToFind = showConsole.toString();
-        int indexPerson = findPersonByName(nameToFind);
-
-        if (indexPerson >= 0) {
-            showConsole.showMessage("Persona con nombre \"" + nameToFind + "\" encontrada:");
-            showConsole.showMessage(people[indexPerson].toString());
-        } else {
-            showConsole.showMessage("Persona con nombre \"" + nameToFind + "\" no encontrada.");
-        }
+        
     }
 }
 

@@ -14,11 +14,11 @@ public class ShowConsole {
     }
     public int inputCode() {
         System.out.print("Ingrese el código de la persona a buscar: ");
-           int code = scanner.nextInt();
+        int code=scanner.nextInt();
         return code;    
     }
     
     public void showMessage(String message) {
-        System.out.println(message.toString());
+        System.out.println(message);
     }
 }
